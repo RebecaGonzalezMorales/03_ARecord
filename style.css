@@ -27,9 +27,21 @@ body {
 }
 .Header h1 {
     text-align: center;
-    /* min-width: 650px; */
+    text-decoration: none;
 }
-
+a:link {
+    color: rgb(218,165,32);
+    text-decoration: none;
+}
+a:visited {
+    color: rgb(218,165,32);
+}
+a:hover {
+    color: rgb(218,165,32);
+}
+a:active {
+    color: rgb(218,165,32);
+}
 .menu {
     color: rgb(18,76,104);
     font-family: Futura Std;
@@ -95,6 +107,10 @@ body {
     font-size: 5.5vh;
     text-transform: uppercase;
     color: rgb(18,76,104);
+}
+.anchor {
+    position:absolute;
+    top: 0;
 }
 .years h1 {
     text-align: right;
@@ -449,7 +465,7 @@ body {
     text-decoration: underline;
 }
 /* ------------------MOBILE SETTINGS------------------ */
-@media only screen and (max-width: 603px) {
+@media only screen and (max-width: 611px) {
     .header h1 {
         display: block;
     }
