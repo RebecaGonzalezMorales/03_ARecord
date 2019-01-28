@@ -5,6 +5,8 @@
 }
 /* color palette
 Goldenrod rgb(218,165,32)
+lightgold rgb(251,246,232)
+
 */
 body {
     margin: 0;
@@ -20,7 +22,7 @@ body {
     padding-bottom: 10px;
     box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.03);
     position: fixed;
-    top: 0;
+    top: -2px;
     z-index: 99;
 }
 .Header h1 {
@@ -74,10 +76,15 @@ body {
     padding-left: 0.5%;
     padding-right: 0.5%;
     background-color: white;
-    min-width: 160px;
+    min-width: 140px;
     box-shadow: -3px 3px 4px -1px rgba(0, 0, 0, 0.05);
     z-index: 100;
     margin-left: 0;
+    max-height: 60vh;
+    overflow: auto;
+}
+.Category p:hover {
+    text-decoration: underline;
 }
 .years {
     display: inline;
@@ -94,20 +101,26 @@ body {
     font-size: 6vh;
     position:relative;
     right: 5%;
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
 .years h2 {
     font-weight: lighter;
     position: relative;
     left: 20px;
+    top:1000px;
     margin-top: 2px;
     margin-bottom: 2px;
+    display: flex
 }
 .years p {
-    margin-top: 0;
+    margin-top: -2px;
     margin-bottom: 20px;
     position: relative;
     left: 5%;
+    top: 10px;
+}
+.movielist {
+    background-color: rgba(218,165,32, .2);
 }
 .yearbtn {
     color: rgb(218,165,32);
@@ -116,12 +129,12 @@ body {
     text-align: left;
     border-style: none;
     position: relative;
-    left: 10px;
-    top: 0px;
+    left: 0;
+    top: -2px;
     font-family: Futura Std;
     font-size: 8.5vh;
     font-weight: lighter;
-    box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.015);
+    box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.1);
 
 }
 .yearbtn:hover {
@@ -134,14 +147,14 @@ body {
     text-align: left;
     border-style: none;
     position: relative;
-    left: 10px;
-    top: 0;
+    left: 0;
+    top: -2px;
     bottom: 0px;
     font-family: Futura Std;
     font-size: 8.5vh;
     font-weight: lighter;
     padding-bottom: -25px;
-    box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.015);
+    box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.1);
 }
 .yearbtn01:hover {
     text-decoration: underline;
@@ -153,12 +166,12 @@ body {
     text-align: left;
     border-style: none;
     position: relative;
-    left: 10px;
-    top: 0px;
+    left: 0;
+    top: -2px;
     font-family: Futura Std;
     font-size: 8.5vh;
     font-weight: lighter;
-    box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.015);
+    box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.1);
 }
 .yearbtn02:hover {
     text-decoration: underline;
@@ -170,12 +183,12 @@ body {
     text-align: left;
     border-style: none;
     position: relative;
-    left: 10px;
-    top: 0px;
+    left: 0;
+    top: -2px;
     font-family: Futura Std;
     font-size: 8.5vh;
     font-weight: lighter;
-    box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.015);
+    box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.1);
 }
 .yearbtn03:hover {
     text-decoration: underline;
@@ -187,12 +200,12 @@ body {
     text-align: left;
     border-style: none;
     position: relative;
-    left: 10px;
-    top: 0px;
+    left: 0;
+    top: -2px;
     font-family: Futura Std;
     font-size: 8.5vh;
     font-weight: lighter;
-    box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.015);
+    box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.1);
 }
 .yearbtn04:hover {
     text-decoration: underline;
@@ -204,12 +217,12 @@ body {
     text-align: left;
     border-style: none;
     position: relative;
-    left: 10px;
-    top: 0px;
+    left: 0;
+    top: -2px;
     font-family: Futura Std;
     font-size: 8.5vh;
     font-weight: lighter;
-    box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.015);
+    box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.1);
 }
 .yearbtn05:hover {
     text-decoration: underline;
@@ -221,12 +234,12 @@ body {
     text-align: left;
     border-style: none;
     position: relative;
-    left: 10px;
-    top: 0px;
+    left: 0;
+    top: -2px;
     font-family: Futura Std;
     font-size: 8.5vh;
     font-weight: lighter;
-    box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.015);
+    box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.1);
 }
 .yearbtn06:hover {
     text-decoration: underline;
@@ -238,12 +251,12 @@ body {
     text-align: left;
     border-style: none;
     position: relative;
-    left: 10px;
-    top: 0px;
+    left: 0;
+    top: -2px;
     font-family: Futura Std;
     font-size: 8.5vh;
     font-weight: lighter;
-    box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.015);
+    box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.1);
 }
 .yearbtn07:hover {
     text-decoration: underline;
@@ -255,12 +268,12 @@ body {
     text-align: left;
     border-style: none;
     position: relative;
-    left: 10px;
-    top: 0px;
+    left: 0;
+    top: -2px;
     font-family: Futura Std;
     font-size: 8.5vh;
     font-weight: lighter;
-    box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.015);
+    box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.1);
 }
 .yearbtn08:hover {
     text-decoration: underline;
@@ -272,12 +285,12 @@ body {
     text-align: left;
     border-style: none;
     position: relative;
-    left: 10px;
-    top: 0px;
+    left: 0;
+    top: -2px;
     font-family: Futura Std;
     font-size: 8.5vh;
     font-weight: lighter;
-    box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.015);
+    box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.1);
 }
 .yearbtn09:hover {
     text-decoration: underline;
@@ -289,12 +302,12 @@ body {
     text-align: left;
     border-style: none;
     position: relative;
-    left: 10px;
-    top: 0px;
+    left: 0;
+    top: -2px;
     font-family: Futura Std;
     font-size: 8.5vh;
     font-weight: lighter;
-    box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.015);
+    box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.1);
 }
 .yearbtn10:hover {
     text-decoration: underline;
@@ -306,12 +319,12 @@ body {
     text-align: left;
     border-style: none;
     position: relative;
-    left: 10px;
-    top: 0px;
+    left: 0;
+    top: -2px;
     font-family: Futura Std;
     font-size: 8.5vh;
     font-weight: lighter;
-    box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.015);
+    box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.1);
 }
 .yearbtn11:hover {
     text-decoration: underline;
@@ -323,12 +336,12 @@ body {
     text-align: left;
     border-style: none;
     position: relative;
-    left: 10px;
-    top: 0px;
+    left: 0;
+    top: -2px;
     font-family: Futura Std;
     font-size: 8.5vh;
     font-weight: lighter;
-    box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.015);
+    box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.1);
 }
 .yearbtn12:hover {
     text-decoration: underline;
@@ -340,12 +353,12 @@ body {
     text-align: left;
     border-style: none;
     position: relative;
-    left: 10px;
-    top: 0px;
+    left: 0;
+    top: -2px;
     font-family: Futura Std;
     font-size: 8.5vh;
     font-weight: lighter;
-    box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.015);
+    box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.1);
 }
 .yearbtn13:hover {
     text-decoration: underline;
@@ -357,12 +370,12 @@ body {
     text-align: left;
     border-style: none;
     position: relative;
-    left: 10px;
-    top: 0px;
+    left: 0;
+    top: -2px;
     font-family: Futura Std;
     font-size: 8.5vh;
     font-weight: lighter;
-    box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.015);
+    box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.1);
 }
 .yearbtn14:hover {
     text-decoration: underline;
@@ -374,12 +387,12 @@ body {
     text-align: left;
     border-style: none;
     position: relative;
-    left: 10px;
-    top: 0px;
+    left: 0;
+    top: -2px;
     font-family: Futura Std;
     font-size: 8.5vh;
     font-weight: lighter;
-    box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.015);
+    box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.1);
 }
 .yearbtn15:hover {
     text-decoration: underline;
@@ -391,12 +404,12 @@ body {
     text-align: left;
     border-style: none;
     position: relative;
-    left: 10px;
-    top: 0px;
+    left: 0;
+    top: -2px;
     font-family: Futura Std;
     font-size: 8.5vh;
     font-weight: lighter;
-    box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.015);
+    box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.1);
 }
 .yearbtn16:hover {
     text-decoration: underline;
@@ -408,12 +421,12 @@ body {
     text-align: left;
     border-style: none;
     position: relative;
-    left: 10px;
-    top: 0px;
+    left: 0;
+    top: -2px;
     font-family: Futura Std;
     font-size: 8.5vh;
     font-weight: lighter;
-    box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.015);
+    box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.1);
 }
 .yearbtn17:hover {
     text-decoration: underline;
@@ -425,12 +438,12 @@ body {
     text-align: left;
     border-style: none;
     position: relative;
-    left: 10px;
-    top: 0px;
+    left: 0;
+    top: -2px;
     font-family: Futura Std;
     font-size: 8.5vh;
     font-weight: lighter;
-    box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.015);
+    box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.1);
 }
 .yearbtn18:hover {
     text-decoration: underline;
@@ -441,13 +454,19 @@ body {
         display: block;
     }
     .button {
-        top: 290px;
+        top: 275px;
     }
     .dropdown-content {
-        top: 325px;
+        top: 313px;
     }
     .years {
         top: 230px;
+    }
+    .Category p:active {
+        text-decoration: underline;
+    }
+    .Category {
+        max-height: 50vh;
     }
 
 /* Fix height changes in the viewport */
