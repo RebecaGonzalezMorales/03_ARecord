@@ -1,0 +1,454 @@
+/* Fontstyle */
+@font-face {
+  font-family: "Futura Std";
+  src: url(Font\FuturaStd-Book.otf)  format('otf');
+}
+/* color palette
+Goldenrod rgb(218,165,32)
+*/
+body {
+    margin: 0;
+}
+.Header{
+    font-family: Futura Std;
+    background-color: white;
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 5.25vh;
+    color: rgb(218,165,32);
+    /* background-color: green; */
+    padding-bottom: 10px;
+    box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.03);
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+.Header h1 {
+    text-align: center;
+    /* min-width: 650px; */
+}
+
+.menu {
+    color: rgb(18,76,104);
+    font-family: Futura Std;
+    font-size: 1.25em;
+    text-transform: uppercase;
+}
+.button {
+    box-sizing: border-box;
+    height: 3vh;
+    width: 3vh;
+    background-color: transparent;
+    border-style: solid;
+    border-color: rgb(218,165,32);
+    border-width: 0 1.5px 1.5px 0;
+    transform: rotate(45deg);
+    transition: border-width 150ms ease-in-out;
+    position: fixed;
+    top: 180px;
+    right: 2%;
+    z-index: 100;
+}
+.button:hover {
+    /* transform: rotate(-45deg); */
+    border-bottom-width: 3px;
+    border-right-width: 3px;
+}
+.dropdown {
+    position:relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+}
+.dropdown.content.show p {
+    color: rgb(18,76,104);
+    padding: 12px 16px;
+}
+.show {display:inline;}
+
+.Category {
+    position: fixed;
+    top: 221px;
+    right: 0%;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: -3px 3px 4px -1px rgba(0, 0, 0, 0.05);
+    z-index: 100;
+    margin-left: 0;
+}
+.years {
+    display: inline;
+    padding-right: 100vw;
+    position:relative;
+    top:120px;
+    font-family: Futura Std;
+    font-size: 5.5vh;
+    text-transform: uppercase;
+    color: rgb(18,76,104);
+}
+.years h1 {
+    text-align: right;
+    font-size: 6vh;
+    position:relative;
+    right: 5%;
+    margin-bottom: 0;
+}
+.years h2 {
+    font-weight: lighter;
+    position: relative;
+    left: 20px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.years p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    position: relative;
+    left: 5%;
+}
+.yearbtn {
+    color: rgb(218,165,32);
+    background-color: white;
+    width:100vw;
+    text-align: left;
+    border-style: none;
+    position: relative;
+    left: 10px;
+    top: 0px;
+    font-family: Futura Std;
+    font-size: 8.5vh;
+    font-weight: lighter;
+    box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.015);
+
+}
+.yearbtn:hover {
+    text-decoration: underline;
+}
+.yearbtn01 {
+    color: rgb(218,165,32);
+    background-color: white;
+    width:100vw;
+    text-align: left;
+    border-style: none;
+    position: relative;
+    left: 10px;
+    top: 0;
+    bottom: 0px;
+    font-family: Futura Std;
+    font-size: 8.5vh;
+    font-weight: lighter;
+    padding-bottom: -25px;
+    box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.015);
+}
+.yearbtn01:hover {
+    text-decoration: underline;
+}
+.yearbtn02 {
+    color: rgb(218,165,32);
+    background-color: white;
+    width:100vw;
+    text-align: left;
+    border-style: none;
+    position: relative;
+    left: 10px;
+    top: 0px;
+    font-family: Futura Std;
+    font-size: 8.5vh;
+    font-weight: lighter;
+    box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.015);
+}
+.yearbtn02:hover {
+    text-decoration: underline;
+}
+.yearbtn03 {
+    color: rgb(218,165,32);
+    background-color: white;
+    width:100vw;
+    text-align: left;
+    border-style: none;
+    position: relative;
+    left: 10px;
+    top: 0px;
+    font-family: Futura Std;
+    font-size: 8.5vh;
+    font-weight: lighter;
+    box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.015);
+}
+.yearbtn03:hover {
+    text-decoration: underline;
+}
+.yearbtn04 {
+    color: rgb(218,165,32);
+    background-color: white;
+    width:100vw;
+    text-align: left;
+    border-style: none;
+    position: relative;
+    left: 10px;
+    top: 0px;
+    font-family: Futura Std;
+    font-size: 8.5vh;
+    font-weight: lighter;
+    box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.015);
+}
+.yearbtn04:hover {
+    text-decoration: underline;
+}
+.yearbtn05 {
+    color: rgb(218,165,32);
+    background-color: white;
+    width:100vw;
+    text-align: left;
+    border-style: none;
+    position: relative;
+    left: 10px;
+    top: 0px;
+    font-family: Futura Std;
+    font-size: 8.5vh;
+    font-weight: lighter;
+    box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.015);
+}
+.yearbtn05:hover {
+    text-decoration: underline;
+}
+.yearbtn06 {
+    color: rgb(218,165,32);
+    background-color: white;
+    width:100vw;
+    text-align: left;
+    border-style: none;
+    position: relative;
+    left: 10px;
+    top: 0px;
+    font-family: Futura Std;
+    font-size: 8.5vh;
+    font-weight: lighter;
+    box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.015);
+}
+.yearbtn06:hover {
+    text-decoration: underline;
+}
+.yearbtn07 {
+    color: rgb(218,165,32);
+    background-color: white;
+    width:100vw;
+    text-align: left;
+    border-style: none;
+    position: relative;
+    left: 10px;
+    top: 0px;
+    font-family: Futura Std;
+    font-size: 8.5vh;
+    font-weight: lighter;
+    box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.015);
+}
+.yearbtn07:hover {
+    text-decoration: underline;
+}
+.yearbtn08 {
+    color: rgb(218,165,32);
+    background-color: white;
+    width:100vw;
+    text-align: left;
+    border-style: none;
+    position: relative;
+    left: 10px;
+    top: 0px;
+    font-family: Futura Std;
+    font-size: 8.5vh;
+    font-weight: lighter;
+    box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.015);
+}
+.yearbtn08:hover {
+    text-decoration: underline;
+}
+.yearbtn09 {
+    color: rgb(218,165,32);
+    background-color: white;
+    width:100vw;
+    text-align: left;
+    border-style: none;
+    position: relative;
+    left: 10px;
+    top: 0px;
+    font-family: Futura Std;
+    font-size: 8.5vh;
+    font-weight: lighter;
+    box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.015);
+}
+.yearbtn09:hover {
+    text-decoration: underline;
+}
+.yearbtn10 {
+    color: rgb(218,165,32);
+    background-color: white;
+    width:100vw;
+    text-align: left;
+    border-style: none;
+    position: relative;
+    left: 10px;
+    top: 0px;
+    font-family: Futura Std;
+    font-size: 8.5vh;
+    font-weight: lighter;
+    box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.015);
+}
+.yearbtn10:hover {
+    text-decoration: underline;
+}
+.yearbtn11 {
+    color: rgb(218,165,32);
+    background-color: white;
+    width:100vw;
+    text-align: left;
+    border-style: none;
+    position: relative;
+    left: 10px;
+    top: 0px;
+    font-family: Futura Std;
+    font-size: 8.5vh;
+    font-weight: lighter;
+    box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.015);
+}
+.yearbtn11:hover {
+    text-decoration: underline;
+}
+.yearbtn12 {
+    color: rgb(218,165,32);
+    background-color: white;
+    width:100vw;
+    text-align: left;
+    border-style: none;
+    position: relative;
+    left: 10px;
+    top: 0px;
+    font-family: Futura Std;
+    font-size: 8.5vh;
+    font-weight: lighter;
+    box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.015);
+}
+.yearbtn12:hover {
+    text-decoration: underline;
+}
+.yearbtn13 {
+    color: rgb(218,165,32);
+    background-color: white;
+    width:100vw;
+    text-align: left;
+    border-style: none;
+    position: relative;
+    left: 10px;
+    top: 0px;
+    font-family: Futura Std;
+    font-size: 8.5vh;
+    font-weight: lighter;
+    box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.015);
+}
+.yearbtn13:hover {
+    text-decoration: underline;
+}
+.yearbtn14 {
+    color: rgb(218,165,32);
+    background-color: white;
+    width:100vw;
+    text-align: left;
+    border-style: none;
+    position: relative;
+    left: 10px;
+    top: 0px;
+    font-family: Futura Std;
+    font-size: 8.5vh;
+    font-weight: lighter;
+    box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.015);
+}
+.yearbtn14:hover {
+    text-decoration: underline;
+}
+.yearbtn15 {
+    color: rgb(218,165,32);
+    background-color: white;
+    width:100vw;
+    text-align: left;
+    border-style: none;
+    position: relative;
+    left: 10px;
+    top: 0px;
+    font-family: Futura Std;
+    font-size: 8.5vh;
+    font-weight: lighter;
+    box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.015);
+}
+.yearbtn15:hover {
+    text-decoration: underline;
+}
+.yearbtn16 {
+    color: rgb(218,165,32);
+    background-color: white;
+    width:100vw;
+    text-align: left;
+    border-style: none;
+    position: relative;
+    left: 10px;
+    top: 0px;
+    font-family: Futura Std;
+    font-size: 8.5vh;
+    font-weight: lighter;
+    box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.015);
+}
+.yearbtn16:hover {
+    text-decoration: underline;
+}
+.yearbtn17 {
+    color: rgb(218,165,32);
+    background-color: white;
+    width:100vw;
+    text-align: left;
+    border-style: none;
+    position: relative;
+    left: 10px;
+    top: 0px;
+    font-family: Futura Std;
+    font-size: 8.5vh;
+    font-weight: lighter;
+    box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.015);
+}
+.yearbtn17:hover {
+    text-decoration: underline;
+}
+.yearbtn18 {
+    color: rgb(218,165,32);
+    background-color: white;
+    width:100vw;
+    text-align: left;
+    border-style: none;
+    position: relative;
+    left: 10px;
+    top: 0px;
+    font-family: Futura Std;
+    font-size: 8.5vh;
+    font-weight: lighter;
+    box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.015);
+}
+.yearbtn18:hover {
+    text-decoration: underline;
+}
+/* ------------------MOBILE SETTINGS------------------ */
+@media only screen and (max-width: 603px) {
+    .header h1 {
+        display: block;
+    }
+    .button {
+        top: 290px;
+    }
+    .dropdown-content {
+        top: 325px;
+    }
+    .years {
+        top: 230px;
+    }
+
+/* Fix height changes in the viewport */
+)
