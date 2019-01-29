@@ -10,6 +10,7 @@ Blue rgb(18,76,104)
 */
 body {
     margin: 0;
+    overflow-x:hidden;
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -151,15 +152,26 @@ a:active {
     margin-bottom: 2px;
     display: flex
 }
-.years p {
+.years h4 {
     margin-top: -2px;
     margin-bottom: 20px;
     position: relative;
     left: 5%;
     top: 10px;
 }
+.years p {
+    margin-top: -2px;
+    margin-bottom: 20px;
+    position: relative;
+    left: 60%;
+    top: -45px;
+    font-size: 4vh;
+    text-transform: capitalize;
+    display: inline;
+}
 .movielist {
     background-color: rgba(218,165,32, .2);
+    overflow:hidden;
 }
 .yearbtn {
     color: rgb(218,165,32);
@@ -169,15 +181,23 @@ a:active {
     border-style: none;
     position: relative;
     left: 0;
-    top: -2px;
+    top: -4px;
     font-family: Futura Std;
     font-size: 8.5vh;
     font-weight: lighter;
     box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.1);
-
 }
 .yearbtn:hover {
     text-decoration: underline;
+}
+img {
+    display: block;
+    height: 45vh;
+    margin-left: auto;
+    margin-right:auto;
+    /* position: relative;
+    left: 7%; */
+    filter: contrast(65%);
 }
 .yearbtn01 {
     color: rgb(218,165,32);
@@ -187,7 +207,7 @@ a:active {
     border-style: none;
     position: relative;
     left: 0;
-    top: -2px;
+    top: -8px;
     bottom: 0px;
     font-family: Futura Std;
     font-size: 8.5vh;
@@ -206,7 +226,7 @@ a:active {
     border-style: none;
     position: relative;
     left: 0;
-    top: -2px;
+    top: -12px;
     font-family: Futura Std;
     font-size: 8.5vh;
     font-weight: lighter;
@@ -224,6 +244,7 @@ a:active {
     position: relative;
     left: 0;
     top: -2px;
+/* top: -16; cause of multiples of 4 */
     font-family: Futura Std;
     font-size: 8.5vh;
     font-weight: lighter;
